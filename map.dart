@@ -7,21 +7,20 @@ void main() {
 
   //add a new key-value pair
   studentinfo['Address'] = '123 Main St';
-  print(studentinfo);
+  print("A new key-value added: $studentinfo");
   //another method
   studentinfo.addAll({'Nationality': 'Pakistani', 'Father name': 'xyz'});
   print(studentinfo);
 
   //get the size of the map
-  print("The length of map is: ");
-  print("${studentinfo['length']}");
+  print("The length of the map: ${studentinfo.length}");
 
   //update a value
   studentinfo['Age'] = '26';
 
 //Printing all keys and values present in map variable
-  //print(studentinfo.keys);
-  //print(studentinfo.values);
+  print("The map contains following keys: ${studentinfo.keys}");
+  print("The map contains following values: ${studentinfo.values}");
 
   //remove a key-value pair
   studentinfo.remove('Father name');
@@ -30,7 +29,7 @@ void main() {
   print(studentinfo.containsKey('Age'));
 
   //get a value by key
-  print(studentinfo['Age']);
+  print("The value in Age key is: ${studentinfo['Age']}");
 
   print(studentinfo);
 }
