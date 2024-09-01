@@ -35,4 +35,8 @@ void main() {
   //Reversing the list
   var list = List.of(mylist.reversed);
   print("New reversed list: $list");
+
+  //sorting the list
+  list.sort();
+  print("Sorted list: $list");
 }
