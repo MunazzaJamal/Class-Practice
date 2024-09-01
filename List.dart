@@ -15,10 +15,6 @@ void main() {
   e = mylist.length;
   print("After change: $e");
 
-  // remove element
-  //mylist.removeAt(2);
-  //print("After removal: $mylist");
-
   //Addition in list at Last
   mylist.add(11);
   mylist.addAll([12, 13, 14]);
@@ -39,4 +35,21 @@ void main() {
   //sorting the list
   list.sort();
   print("Sorted list: $list");
+
+  // Removing from the List
+  //Removing an element
+  mylist.remove(11);
+  //if there are multiple 11 then it will remove only 1st occured element 11
+
+  //Removing the element at required index
+  mylist.removeAt(2);
+  print("After removing index 2: $mylist");
+
+  // Removing the last element from the list
+  mylist.removeLast();
+  print("After Removing last element: $mylist");
+
+  // Removing all elements from the list
+  mylist.clear();
+  print("After clear: $mylist");
 }
